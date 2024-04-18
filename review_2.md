@@ -37,20 +37,13 @@ public function __construct($id, $name)
 - このインスタンス内のstudentIdとstudentNameというプロパティに$idと$nameの引数を格納している。このようにすることによって任意のidとnameを使用してクラスを使い回すことが可能になる。
 
 ## クラスがなぜ必要なのか説明してください。
-- 関連したプロパティやメソッドをまとめておくことでこーどがすっきりして読み易いコードが書ける。
+- 関連したプロパティやメソッドをまとめておくことでコードがすっきりして読み易いコードが書ける。また、プロパティやメソッドを何度も使いまわすことができる。
 
 ## `DateTime::modify`メソッドの返り値を教えてください。
-- object(DateTime)#1 (3) {
-  ["date"]=>
-  string(26) "2024-03-18 00:51:23.528414"
-  ["timezone_type"]=>
-  int(3)
-  ["timezone"]=>
-  string(10) "Asia/Tokyo"
-}
+- DateTimeオブジェクト内の"date"というプロパティ内に格納された変更された後の値が返る。
 
 ## `DateTime::format`メソッドと`DateInterval::format`メソッドの違いを教えてください。
-- `DateTime::format`はしてした書式でフォーマットした日付を返すのに対して、`DateInterval::format`は間隔をフォーマットして返す。
+- `DateTime::format`は指定した書式でフォーマットした日付を返すのに対して、`DateInterval::format`は間隔をフォーマットして返す。
 
 ## 下記コード3行目のformatメソッドの返り値をPHPのマニュアルから調べる手順を具体的に説明してください。
 ```

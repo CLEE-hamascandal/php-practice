@@ -58,4 +58,4 @@ $prev = new DateTime('2000-1-1');
 echo $prev->diff($now)->format('%a')
 ```
 
-- 検索フィールドにDateTimeと入力してDateTimeクラスを検索する。その後DateTimeのメソッド一覧からDateTime::diffを選択して返り値を調べる。参考情報のDateInterval::formatのメソッドを調べると、修飾詞%aの意味が出てくる。
+- 検索フィールドにDateTimeと入力してDateTimeクラスを検索する。その後DateTimeのメソッド一覧からDateTime::diffを選択して参考情報のDateInterval::formatのメソッドを調べると、修飾詞%aの意味が出てくるので、DateTime::diffのページに戻り返り値を調べる。

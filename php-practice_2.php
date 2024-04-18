@@ -139,16 +139,14 @@ $yamada->attend('PHP');
 //Q5-1
 date_default_timezone_set("Asia/Tokyo");
 $date = new DateTime();
-$date->modify('-1 months');
-echo $date->format("Y-m-d");
+echo $date->modify('-1 months')->format("Y-m-d");
 
 
 //Q5-2
 date_default_timezone_set('Asia/Tokyo');
 $today = new DateTime('now');
 $thatDay = new DateTime('1992-4-25');
-$diff = $today->diff($thatDay);
-echo $diff->format('あの日から%a日経過しました。');
+echo $diff = $today->diff($thatDay)->format('あの日から%a日経過しました。');
 
 
 ?>
